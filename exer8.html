@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+
+<body>
+    <script>
+        /*Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"*/
+        // Array para armazenar os números informados pelo usuário
+        var numeros = [];
+        var soma = 0; // Variável para armazenar a soma dos números
+
+        // Solicita ao usuário que informe os quatro números
+        for (var i = 0; i < 4; i++) {
+            var numero = parseInt(prompt("Informe um número: "));
+
+            // Verifica se o número está dentro do intervalo desejado (entre 0 e 10)
+            if (numero > 0 && numero < 10) {
+                // Se estiver no intervalo desejado, adiciona-o ao array 'numeros'
+                numeros.push(numero);
+                soma += numero; // Adiciona o número à soma
+            } else {
+                // Se estiver fora do intervalo desejado, exibe uma mensagem de erro e sai do loop
+                alert("Erro: Todos os números devem ser maiores que 0 e menores que 10.");
+                break;
+            }
+        }
+
+        // Verifica se todos os números foram informados corretamente
+        if (numeros.length === 4) {
+            // Calcula a média dos números
+            var media = soma / 4;
+
+            // Verifica se a média é maior que cinco
+            if (media > 5) {
+                alert("Você passou no teste"); // Exibe mensagem no navegador
+            } else {
+                alert("Tente novamente"); // Exibe mensagem no navegador
+            }
+        }
+    </script>
+</body>
+
+</html>

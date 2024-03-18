@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+
+    // Escreva um programa em que o usuário informe dois números utilizando o "prompt". Então escreva em tela o maior deles.
+
+       var numero1= parseFloat(prompt("Digite um número: " ));
+       var numero2= parseFloat(prompt("Digite um número de novo: "))
+
+       var maiornumero
+
+       if (numero1 > numero2){
+        maiornumero = numero1
+       }
+       else if (numero2 > numero1){
+        maiornumero = numero2
+       }
+       else{
+        alert("Os números são iguais.");
+       }
+
+       alert("O maior número é: " + maiornumero);
+
+    </script>
+</body>
+</html>

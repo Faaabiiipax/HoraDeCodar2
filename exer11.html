@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+
+<body>
+    <script>
+        /*Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
+O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. */
+
+        var valor1 = parseInt(prompt("Digite um valor: "))
+        var valor2 = parseInt(prompt("Digite outro valor: "))
+        var operacao = parseInt(prompt("Digite a operação desejada (1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação):"))
+
+        if (operacao === 1){
+            //adição
+            var resultado = valor1 + valor2;
+            alert("O resultado da adição é " + resultado);
+        }else if (operacao === 2){
+            //subtração
+            var resulado = valor1 - valor2;
+            alert("O resultado da subtração é: " + resulado);
+        }else if (operacao === 3) {
+             // Divisão
+             var resultado = valor1 / valor2;
+           alert("O resultado da divisão é: " + resultado);
+        } else if (operacao === 4) {
+            // Multiplicação
+            var resultado = valor1 * valor2;
+            alert("O resultado da multiplicação é: " + resultado);
+        } else {
+            // Operação inválida
+            alert("Operação inválida. Por favor, escolha 1, 2, 3 ou 4.");
+        }
+    </script>
+</body>
+
+</html>

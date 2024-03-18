@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+
+    //Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.
+     var numeros = []; // Array para armazenar os números informados pelo usuário
+     var soma = 0;// Variável para armazenar a soma dos números inferiores a 72
+
+     //loop para ver os números informados pelo usuário
+     for(var i = 0; i < 6; i++){
+        var numero = parseInt(prompt("Informe um número: "));
+
+        // Adiciona o número ao array 'numeros' independentemente do seu valor
+        numeros.push(numero);
+
+        //Verificar se o número é < 72
+        if (numero < 72){
+            soma += numero;
+        }
+     }
+
+     // Exibe a soma dos números inferiores a 72
+     alert("A soma dos números inferiores a 72 é: " + soma);
+
+     // Exibe todos os números informados pelo usuário
+     alert("Números informados pelo usuário: ");
+     alert(numeros);
+     
+    </script>
+</body>
+</html>
